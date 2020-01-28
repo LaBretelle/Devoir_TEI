@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/out/odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="FRA">Phèdre</title>
+            <title xml:lang="LAT">Phaedra</title>
+            <author><surname>Sénèque</surname></author>
+            <editor>François-Régis Chaumartin</editor>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre d'un devoir de M2 TNAH</resp>
+               <persName><forename>Paul</forename><name>Robert</name></persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Éditions des Belles Lettres</publisher>
+            <distributor>Belles Lettres diffusion distribution (BLDD)</distributor>
+            <date>1996</date>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title xml:lang="LAT">Phaedra</title>
+                  <title xml:lang="FRA">Phèdre</title>
+                  <editor><forename>François-Régis</forename>
+                     <name>Chaumartin</name></editor>
+                  <author><forename xml:lang="LAT">Lucius</forename><name xml:lang="LAT"
+                        >Annaeus</name><surname xml:lang="LAT">Seneca</surname><surname
+                        xml:lang="FRA">Sénèque</surname></author>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher><orgName>Les Belles Lettres</orgName></publisher>
+                  <distributor>Belles Lettres diffusion distribution (BLDD)</distributor>
+                  <date when="1996">1996</date>
+                  <availability status="restricted">
+                     <p>Sous droits d'auteur pour la traduction.</p>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title xml:lang="FRA">Phèdre</title>
+                  <title xml:lang="LAT">Phaedra</title>
+                  <biblScope unit="line" from="218" to="330">Vers 218 au vers 330</biblScope>
+               </seriesStmt>
+            </biblFull>
+            <listWit>
+               <witness xml:id="R">Ambrosianus <idno>G 82 sup.</idno></witness>
+               <witness xml:id="E">Laurentianus <idno>Plut. 37. 13</idno> (Etruscus)</witness>
+               <witness xml:id="Th">Parisinus <idno>Lat. 8071</idno> (excerpta Thuanea)</witness>
+               <witness xml:id="F">Parisinus <idno>Lat. 11855</idno></witness>
+               <witness xml:id="M">Ambrosianus <idno>D 276 inf</idno></witness>
+               <witness xml:id="N">Vaticanus <idno>Lat. 1769</idno></witness>
+               <listWit xml:id="A">
+                  <witness xml:id="P">Parisinus <idno>Lat. 8260</idno></witness>
+                  <witness xml:id="T">Parisinus <idno>Lat. 8031</idno></witness>
+                  <witness xml:id="C">Cantabrigiensis, Corpus Christi College
+                     <idno>406</idno></witness>
+                  <witness xml:id="S">Scoraliensis <idno>108 T III l l</idno></witness>
+                  <witness xml:id="V">Vaticanus <idno>Lat. 2829</idno></witness>
+
+               </listWit>
+               <listWit xml:id="recc">
+                  <witness xml:id="&#964;">Codex quem Nikolaus Treuet adhibuit in commentario
+                     exarando</witness>
+                  <witness xml:id="K">Cameracensis <idno>B 55</idno></witness>
+                  <witness xml:id="Q">Casinensis <idno>392 O</idno></witness>
+                  <witness xml:id="e">Etonensis <idno>110</idno></witness>
+                  <witness xml:id="Ox">Oxoniensis Canon. <idno>Class. Lat. 93</idno></witness>
+                  <witness xml:id="d">Neapolitanus <orgName>Bibl. Nat.</orgName>
+                     <idno>IV. e. I</idno></witness>
+                  <witness xml:id="n">Neapolitanus <orgName>Bibl. Nat.</orgName>
+                     <idno>IV. d. 47</idno></witness>
+                  <witness xml:id="r">Vaticanus Reginensis Latinus</witness>
+               </listWit>
+               <witness xml:id="L">Laurentianus Plut. <idno>24 sin. 4</idno></witness>
+
+               <witness xml:id="ecl">Leidensis <idno>B L P 191 B</idno></witness>
+               <witness xml:id="ed">Editores</witness>
+               <witness xml:id="perseus">Source secrète de Mme Pinche</witness>
+               <witness xml:id="Z">Reconstruction selon Otto Zwierlein</witness>
+               <witness xml:id="G">Edition Gronovius de 1623</witness>
+               <witness xml:id="LEO">Édition Berolini de 1878</witness>
+               <witness xml:id="BOTHE">Édition de Lipse de 1819 et 1834</witness>
+               <witness xml:id="GROTIUS">Édition de Grotius</witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Styx" type="fleuve" subtype="mythologique">
+                  <placeName><geogName>Le fleuve Styx</geogName></placeName>
+               </place>
+               <place xml:id="Athenes" type="cité">
+                  <placeName>Pallas<note>Pallas-Athena est un des noms de la déesse Athéna, déesse
+                        protectrice de la ville d'Athènes</note>
+                     <country>Grèce</country>
+                     <settlement type="citadelle">Athènes</settlement></placeName>
+                  <placeName>Athènes <country>Grèce</country></placeName>
+               </place>
+               <place xml:id="Hespérie" type="pays">
+                  <placeName><country>Espagne</country><note>Du point de vue des
+                     latins.</note></placeName>
+                  <placeName><country>Italie</country><note>Du point de vue des
+                     grecs.</note></placeName>
+                  <note>Désigne de manière générique les "terres à l'ouest".</note>
+               </place>
+               <place xml:id="TropiqueCancer" type="latitude">
+                  <location>
+                     <geo>parallèle 23° 26' 12.555" de latitude nord</geo>
+                  </location>
+                  <placeName><country>Algérie</country></placeName>
+                  <placeName><country>Niger</country></placeName>
+                  <placeName><country>Mauritanie</country></placeName>
+                  <placeName><country>Égypte</country></placeName>
+                  <placeName><country>Lybie</country></placeName>
+                  <placeName><country>Arabie Saoudite</country></placeName>
+                  <note>Ces pays ont en commun d'être familiers des romains et des grecs, et d'être
+                     traversés par le tropique du Cancer.</note>
+               </place>
+               <place xml:id="Nord">
+                  <location>
+                     <geo>Région au nord de l'Italie et de la Grèce</geo>
+                  </location>
+                  <note>Ces régions sont froides, et souvent peuplées de nomades.</note>
+               </place>
+               <place xml:id="Thessalie">
+                  <placeName><region>Thessalie</region></placeName>
+               </place>
+               <place xml:id="Perse" type="empire">
+                  <placeName from-custom="550 av. J-C" to-custom="330 av. J-C"
+                        ><country>Perse</country></placeName>
+                  <note>Pays recouvrant notammant l'Iran.</note>
+               </place>
+               <place xml:id="Lydie" type="royaume">
+                  <placeName><country>Lydie</country></placeName>
+               </place>
+               <place xml:id="Tyr" type="ville">
+                  <placeName><settlement>Tyr</settlement><geo>33° 16′ 08″ nord, 35° 12′ 59″
+                        est</geo></placeName>
+               </place>
+            </listPlace>
+         </settingDesc>
+         <particDesc>
+            <listPerson type="Personnages">
+               <person xml:id="Phedre" sex="femme">
+                  <persName><forename>Phèdre</forename></persName>
+                  <occupation>Reine d'Athènes</occupation>
+               </person>
+               <person xml:id="Nourrice" sex="femme">
+                  <persName><surname>La Nourrice</surname></persName>
+                  <occupation>Nourrice et confidente de Phèdre</occupation>
+               </person>
+               <person xml:id="Thésée" sex="homme">
+                  <persName><forename>Thésée</forename></persName>
+                  <occupation>Roi d'Athènes</occupation>
+               </person>
+               <listRelation>
+                  <relation name="epoux" mutual="#Phedre #Thésée"/>
+               </listRelation>
+            </listPerson>
+            <listPerson type="Dieux">
+               <person xml:id="Pluton">
+                  <persName><name>Pluton</name><name>Dis</name><name>Dis Pater</name><roleName>Dieu
+                        des enfers</roleName></persName>
+               </person>
+               <person xml:id="Venus">
+                  <persName><name>Vénus</name><roleName>Déesse de l'amour</roleName></persName>
+               </person>
+               <person xml:id="Athéna">
+                  <persName><name>Athéna</name><name>Pallas-Athéna</name><name>Pallas</name><roleName>Déesse
+                        de la sagesse</roleName></persName>
+               </person>
+               <person xml:id="Cupidon">
+                  <persName><name>Cupidon</name><roleName>Dieu de l'amour</roleName></persName>
+               </person>
+               <person xml:id="Apollon">
+                  <persName><name>Phébus</name><name>Phoebus</name><name>Apollon</name><roleName>Dieu
+                        incarnant le soleil</roleName></persName>
+               </person>
+            </listPerson>
+            <listPerson type="Mentionnés">
+               <person xml:id="Antiope">
+                  <persName><forename>Antiope</forename></persName>
+                  <death>Morte à Athènes.</death>
+                  <occupation>Reine des Amazones</occupation>
+                  <nationality>Amazone</nationality>
+                  <note>Seule amazone à s'être mariée</note>
+               </person>
+               <person xml:id="Pirithoüs">
+                  <persName><forename>Pirithoüs</forename><forename>Pirithoos</forename></persName>
+                  <occupation>Roi des Lapithes.</occupation>
+               </person>
+               <person xml:id="Ariane">
+                  <persName><forename>Ariane</forename></persName>
+               </person>
+               <person xml:id="Alcmène">
+                  <persName><forename>Alcmène</forename><roleName>Reine de
+                     Tirynthe.</roleName></persName>
+                  <note>Elle eut une relation avec Zeus, de laquelle union naquit Héraclès.</note>
+               </person>
+               <listRelation>
+                  <relation name="epoux" mutual="#Antiope #Thésée"/>
+                  <relation name="ami" mutual="#Thésée #Pirithoüs"/>
+                  <relation name="fratrie" mutual="#Ariane #Phedre"/>
+                  <relation name="amour" mutual="#Ariane #Thésée"/>
+               </listRelation>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+      <encodingDesc>
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <castList>
+            <castItem><role>Phèdre</role></castItem>
+            <castItem><role>La nourrice</role></castItem>
+            <castItem xml:id="Choeur"><role>Le choeur</role><name>Le Choeur</name></castItem>
+            <castItem xml:id="ChoeurGressae"><role>Le choeur</role><name xml:lang="LAT">Chorus
+                  Gressae</name><name xml:lang="FRA">Le Choeur de Gressa</name><note>Selon le
+                  manuscrit E</note></castItem>
+         </castList>
+      </front>
+      <body>
+         <sp who="#Phedre">
+            <l n="218">Amoris in me maximum regnum <app>
+                  <lem wit="#E">puto</lem>
+                  <rdg wit="#A">fero</rdg>
+                  <rdg wit="#Z">reor</rdg>
+               </app></l>
+            <l n="219">reditusque nullos metuo: non umquam amplius</l>
+            <l n="220">convexa tetigit supera qui mersus semel </l>
+            <l n="221">adiit silentem nocte perpetua domum.</l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="222">Ne crede <app>
+                  <lem wit="#E"><persName ref="#Pluton">Diti</persName></lem>
+                  <rdg wit="#A">ditis</rdg>
+               </app>. Clauserit regnum licet</l>
+            <l n="223">canisque diras <placeName ref="#Styx">Stygius</placeName> observet fores:</l>
+            <l n="224">solus negatas invenit <persName ref="#Thésée">Theseus</persName> vias.</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="225">Veniam ille amori forsitan nostro dabit. </l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="226">Immitis etiam coniugi castae fuit:</l>
+            <l n="227">experta <app>
+                  <lem wit="#E">saevam est</lem>
+                  <rdg wit="#A">est saevam</rdg>
+               </app> barbara <persName ref="#Antiope">Antiope</persName> manum.</l>
+            <l n="228">sed posse flecti coniugem iratum puta:</l>
+            <l n="229">quis huius animum flectet intractabilem?</l>
+            <l n="230">exosus omne feminae nomen fugit, </l>
+            <l n="231">immitis annos caelibi vitae dicat,</l>
+            <l n="232">conubia vitat: genus Amazonium scias.</l>
+         </sp>
+         <app>
+            <lem wit="#E"><sp who="#Phedre">
+                  <l n="233">Hunc in nivosi collis haerentem iugis,</l>
+                  <l n="234">et aspera agili saxa calcantem pede</l>
+                  <l n="235">sequi per alta nemora, per montes placet. </l>
+                  <app>
+                     <lem wit="#E"><l n="236">Resistet ille seque mulcendum dabit</l>
+                        <l n="237">castosque ritus <persName ref="#Venus">Venere</persName> non
+                           casta exuet?</l></lem>
+                     <rdg wit="#τ #K #Q #e #Ox #d #L #n #r"><sp who="#Nourrice">
+                           <l n="236">Resistet ille seque mulcendum dabit</l>
+                           <l n="237">castosque ritus <persName ref="#Venus">Venere</persName> non
+                              casta exuet?</l>
+                        </sp></rdg>
+                  </app>
+               </sp></lem>
+            <rdg wit="#A"> </rdg>
+         </app>
+         <app>
+            <lem wit="#ed"><sp who="#Nourrice">
+                  <l n="238">tibi ponet odium, cuius odio forsitan</l>
+                  <l n="239">persequitur omnes? precibus <app>
+                        <lem wit="#E">haud</lem>
+                        <rdg wit="#A">aut</rdg>
+                     </app> vinci potest.</l>
+               </sp></lem>
+            <rdg wit="#E"><sp who="#Nourrice">
+                  <l n="238">tibi ponet odium, cuius odio forsitan</l>
+               </sp></rdg>
+            <rdg wit="#τ #K #Q #e #Ox #d #L #n #r"><sp who="#Nourrice">
+                  <l n="238">tibi ponet odium, cuius odio forsitan</l>
+               </sp><sp who="#Phedre">
+                  <l n="239">persequitur omnes? precibus <app>
+                        <lem wit="#E">haud</lem>
+                        <rdg wit="#A">aut</rdg>
+                     </app> vinci potest.</l>
+               </sp></rdg>
+            <rdg wit="#A"> </rdg>
+         </app>
+         <app>
+            <lem wit="#E"><sp who="#Phedre">
+                  <l n="240">Ferus est? amore didicimus vinci feros. </l>
+               </sp></lem>
+            <rdg wit="#A"><sp who="#Phedre">
+                  <l n="240">Ferus est?</l>
+               </sp><sp who="#Nourrice">
+                  <l n="240b">Amore didicimus vinci feros.</l>
+               </sp>
+            </rdg>
+         </app>
+         <sp who="#Nourrice">
+            <l n="241" part="I">Fugiet.</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="241b" part="F">Per ipsa maria <app>
+                  <lem wit="#E">si fugiet</lem>
+                  <rdg wit="#A">si fugiat</rdg>
+               </app>, sequar.</l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="242" part="I">Patris memento.</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="242b" part="F">Meminimus matris simul.</l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="243" part="I">Genus omne profugit.</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="243b" part="F">Paelicis careo metu.</l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="244" part="I">Aderit maritus—</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="244b" part="F">Nempe <persName ref="#Pirithoüs">Perithoi</persName> comes?</l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="245" part="I">Aderitque genitor,</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="245b" part="F">Mitis, <app>
+                  <lem wit="#E"><persName ref="#Ariane">Ariadnae</persName></lem>
+                  <rdg wit="#A"><persName ref="#Ariane">Adriagne</persName></rdg>
+               </app> pater. </l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="246">Per has senectae <app>
+                  <lem wit="#A">splendidas</lem>
+                  <rdg wit="#E">splendida</rdg>
+               </app> supplex comas</l>
+            <l n="247">fessumque curis pectus et cara ubera</l>
+            <l n="248">precor, furorem siste teque <app>
+                  <lem wit="#E">ipsa</lem>
+                  <rdg wit="#A"/>
+               </app> adiuva:</l>
+            <l n="249"><app>
+                  <lem wit="#A">pars</lem>
+                  <rdg wit="#E"/>
+               </app> sanitatis velle sanari fuit.</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="250">Non omnis animo cessit <app>
+                  <lem wit="#A">ingenuo</lem>
+                  <rdg wit="#E">ingenio</rdg>
+               </app> pudor. </l>
+            <l n="251">paremus, altrix. qui regi non vult amor</l>
+            <l n="252">vincatur. haud te, fama, maculari sinam.</l>
+            <l n="253">haec sola ratio est, unicum effugium mali:</l>
+            <l n="254">virum sequamur, morte praevertam nefas.</l>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="255">Moderare, alumna, <app>
+                  <lem wit="#E">mentis</lem>
+                  <rdg wit="#A">mortis</rdg>
+               </app> effrenae impetus, </l>
+            <l n="256">animos coerce, dignam ob hoc <app>
+                  <lem wit="#A">vita</lem>
+                  <rdg wit="#E">ultra</rdg>
+               </app> reor</l>
+            <l n="257">quod esse temet autumas dignam nece.</l>
+         </sp>
+         <sp who="#Phedre">
+            <l n="258">Decreta mors est: quaeritur fati genus.</l>
+            <l n="259">laqueone vitam finiam an ferro incubem?</l>
+            <l n="260">an missa praeceps<placeName ref="#Athenes"> arce <persName ref="#Athéna"
+                     >Palladia</persName></placeName> cadam? </l>
+            <app>
+               <lem><l n="261"><app>
+                        <lem wit="#E">Proin</lem>
+                        <rdg wit="#A">pro(h)</rdg>
+                     </app> castitatis vindicem armemus manum.</l></lem>
+               <rdg wit="#G"> </rdg>
+            </app>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="262"><app>
+                  <lem wit="#E">Sic</lem>
+                  <rdg wit="#A">si</rdg>
+               </app> te senectus nostra praecipiti sinat </l>
+            <l n="263">perire leto? <app>
+                  <lem wit="#E #C">siste</lem>
+                  <rdg wit="#S">sisteque</rdg>
+                  <rdg wit="#P #T #V">sique</rdg>
+               </app> furibundum impetum.</l>
+            <app>
+               <lem><l n="264"> haud quisquam ad vitam facile revocari potest </l></lem>
+               <rdg wit="#A"><l n="264"> </l></rdg>
+            </app>
+         </sp>
+         <sp who="#Phedre">
+            <l n="265">Prohibere nulla ratio periturum potest: </l>
+            <l n="266">ubi <app>
+                  <lem wit="#E">qui</lem>
+                  <rdg wit="#A">quis</rdg>
+               </app>mori constituit et debet mori.</l>
+            <app>
+               <lem> </lem>
+               <rdg wit="#G"><l n="261"><app>
+                        <lem wit="#E">Proin</lem>
+                        <rdg wit="#A">pro(h)</rdg>
+                     </app> castitatis vindicem armemus manum.</l></rdg>
+            </app>
+         </sp>
+         <sp who="#Nourrice">
+            <l n="267">Solamen annis unicum fessis, era, </l>
+            <l n="268">si tam protervus incubat menti furor,</l>
+            <l n="269">contemne famam— fama vix vero favet,</l>
+            <l n="270">peius merenti melior et peior bono. </l>
+            <l n="271">temptemus animum tristem et intractabilem.</l>
+            <l n="272">meus iste labor est aggredi iuvenem ferum</l>
+            <l n="273">mentemque saevam flectere immitis viri.</l>
+         </sp>
+         <app>
+            <lem wit="#A"><sp who="#Choeur">
+                  <l n="274">Diva non miti generata ponto,</l>
+                  <l n="275">quam vocat matrem geminus <persName ref="#Cupidon">Cupido</persName>, </l>
+                  <l n="276"> impotens flammis simul et sagittis </l>
+                  <l n="277">iste <app>
+                        <lem wit="#E">lascivus puer et renidens</lem>
+                        <rdg wit="#A">puer lascivus et acre nitens</rdg>
+                     </app></l>
+                  <l n="278">tela quam certo <app>
+                        <lem wit="#E">moderatur</lem>
+                        <rdg wit="#A">jaculatur</rdg>
+                     </app> arcu!</l>
+                  <app>
+                     <lem wit="#Z #LEO #BOTHE"><l n="279"> labitur totas furor in medullas </l>
+                        <l n="280"> igne furtivo populante venas. </l></lem>
+                     <rdg wit="#A"><l n="279"> </l><l n="280"> </l></rdg>
+                  </app>
+                  <l n="281">non habet latam data plaga frontem,</l>
+                  <l n="282">sed <app>
+                        <lem wit="#E">vorat</lem>
+                        <rdg wit="#A">vocat</rdg>
+                     </app> tectas penitus medullas,</l>
+                  <l n="283">nulla pax isti puero: per orbem</l>
+                  <l n="284">spargit effusas agilis sagittas;</l>
+                  <l n="285">quaeque nascentem videt ora solem, </l>
+                  <l n="286">quaeque ad <app>
+                        <lem wit="#E"><placeName ref="#Hespérie">Hesperiae</placeName> iacet ora
+                           metas</lem>
+                        <rdg wit="#A">occasus jacet pra seros</rdg>
+                     </app>,</l>
+                  <l n="287">si qua ferventi subiecta <placeName ref="#TropiqueCancer"
+                        >cancro</placeName><app>
+                        <lem wit="#LEO #perseus"> </lem>
+                        <rdg>est</rdg>
+                     </app>,</l>
+                  <l n="288">si qua <app>
+                        <lem wit="#E"><placeName ref="#Nord">Parrhasiae</placeName></lem>
+                        <rdg wit="#A">majoris</rdg>
+                     </app> glacialis ursae</l>
+                  <l n="289">semper errantes patitur colonos, </l>
+                  <l n="290">novit hos aestus, iuvenum feroces </l>
+                  <l n="291">concitat flammas senibusque fessis</l>
+                  <l n="292">rursus extinctos revocat calores,</l>
+                  <l n="293">virginum ignoto ferit igne pectus</l>
+                  <l n="294">et iubet caelo superos relicto</l>
+                  <l n="295">vultibus falsis habitare terras. </l>
+                  <l n="296"><placeName ref="#Thessalie">Thessali</placeName>
+                     <persName ref="#Apollon">Phoebus</persName> pecoris magister</l>
+                  <l n="297">egit armentum positoque plectro</l>
+                  <l n="298">impari tauros calamo vocavit,</l>
+                  <l n="299">induit formas quotiens minores</l>
+                  <l n="300">ipse qui caelum nebulasque <app>
+                        <lem wit="#A">ducit</lem>
+                        <rdg wit="#E">fecit</rdg>
+                     </app>: </l>
+                  <l n="301">Candidas ales modo movit alas,</l>
+                  <l n="302">dulcior <app>
+                        <lem wit="#recc">vocem</lem>
+                        <rdg wit="#E #A">voce</rdg>
+                     </app> moriente cygno ;</l>
+                  <l n="303">fronte nunc torva petulans iuvencus</l>
+                  <l n="304">virginum stravit sua terga ludo,</l>
+                  <l n="305">perque fraternos <app>
+                        <lem wit="#E">nova</lem>
+                        <rdg wit="#A">mala</rdg>
+                     </app> regna fluctus </l>
+                  <l n="306">ungula lentos imitante remos</l>
+                  <l n="307">* pectore adverso domuit profundum,</l>
+                  <l n="308">pro sua vector timidus rapina,</l>
+                  <l n="309">arsit obscuri dea clara mundi</l>
+                  <l n="310">nocte deserta nitidosque fratri </l>
+                  <l n="311">tradidit currus aliter regendos:</l>
+                  <l n="312">ille nocturnas agitare bigas</l>
+                  <l n="313">discit et gyro breviore flecti, </l>
+                  <app>
+                     <lem wit="#LEO #perseus"><l n="316">dum tremunt axes graviore curru; </l></lem>
+                     <rdg> </rdg>
+                  </app>
+                  <l n="314">nec suum tempus tenuere nectes </l>
+                  <l n="315">et dies tardo remeavit ortu. </l>
+                  <app>
+                     <lem wit="#LEO"> </lem>
+                     <rdg><l n="316">dum tremunt axes graviore curru; </l></rdg>
+                  </app>
+                  <l n="317">natus <persName ref="#Alcmène">Alcmena</persName> posuit pharetras </l>
+                  <l n="318">et minax vasti spolium leonis,</l>
+                  <l n="319">passus aptari digitis zmaragdos</l>
+                  <l n="320">et dari legem rudibus capillis; </l>
+                  <l n="321">crura distincto religavit auro.</l>
+                  <l n="322">luteo plantas cohibente socco;</l>
+                  <l n="323">et manu, clavam modo qua gerebat,</l>
+                  <l n="324">fila deduxit properante fuso:</l>
+                  <l n="325"><app>
+                        <lem wit="#A">Vidit</lem>
+                        <rdg wit="#E">Vidi</rdg>
+                     </app>
+                     <placeName ref="#Perse">Persis</placeName> ditique ferox </l>
+                  <l n="326"><placeName ref="#Lydie">Lydia</placeName>
+                     <app>
+                        <lem wit="#E #P">regno</lem>
+                        <rdg wit="#C #recc">regni</rdg>
+                        <rdg wit="#GROTIUS">harenae</rdg>
+                        <rdg wit="#Z">harena</rdg>
+                     </app></l>
+                  <l n="327">deiecta feri terga leonis</l>
+                  <l n="328">umerisque, quibus sederat alti</l>
+                  <l n="329">regia caeli,</l>
+                  <l n="330">tenuem <placeName ref="#Tyr">Tyrio</placeName> stamine pallam. </l>
+               </sp></lem>
+            <rdg wit="#E"><sp who="#ChoeurGressae">
+                  <l n="274">Diva non miti generata ponto,</l>
+                  <l n="275">quam vocat matrem geminus <persName ref="#Cupidon">Cupido</persName>, </l>
+                  <l n="276"> impotens flammis simul et sagittis </l>
+                  <l n="277">iste <app>
+                        <lem wit="#E">lascivus puer et renidens</lem>
+                        <rdg wit="#A">puer lascivus et acre nitens</rdg>
+                     </app></l>
+                  <l n="278">tela quam certo <app>
+                        <lem wit="#E">moderatur</lem>
+                        <rdg wit="#A">jaculatur</rdg>
+                     </app> arcu!</l>
+                  <app>
+                     <lem wit="#Z #LEO #BOTHE"><l n="279"> labitur totas furor in medullas </l>
+                        <l n="280"> igne furtivo populante venas. </l></lem>
+                     <rdg wit="#A"><l n="279"> </l><l n="280"> </l></rdg>
+                  </app>
+                  <l n="281">non habet latam data plaga frontem,</l>
+                  <l n="282">sed <app>
+                        <lem wit="#E">vorat</lem>
+                        <rdg wit="#A">vocat</rdg>
+                     </app> tectas penitus medullas,</l>
+                  <l n="283">nulla pax isti puero: per orbem</l>
+                  <l n="284">spargit effusas agilis sagittas;</l>
+                  <l n="285">quaeque nascentem videt ora solem, </l>
+                  <l n="286">quaeque ad <app>
+                        <lem wit="#E"><placeName ref="#Hespérie">Hesperiae</placeName> iacet ora
+                           metas</lem>
+                        <rdg wit="#A">occasus jacet pra seros</rdg>
+                     </app>,</l>
+                  <l n="287">si qua ferventi subiecta <placeName ref="#TropiqueCancer"
+                        >cancro</placeName><app>
+                        <lem wit="#LEO #perseus"> </lem>
+                        <rdg>est</rdg>
+                     </app>,</l>
+                  <l n="288">si qua <app>
+                        <lem wit="#E"><placeName ref="#Nord">Parrhasiae</placeName></lem>
+                        <rdg wit="#A">majoris</rdg>
+                     </app> glacialis ursae</l>
+                  <l n="289">semper errantes patitur colonos, </l>
+                  <l n="290">novit hos aestus, iuvenum feroces </l>
+                  <l n="291">concitat flammas senibusque fessis</l>
+                  <l n="292">rursus extinctos revocat calores,</l>
+                  <l n="293">virginum ignoto ferit igne pectus</l>
+                  <l n="294">et iubet caelo superos relicto</l>
+                  <l n="295">vultibus falsis habitare terras. </l>
+                  <l n="296"><placeName ref="#Thessalie">Thessali</placeName>
+                     <persName ref="#Apollon">Phoebus</persName> pecoris magister</l>
+                  <l n="297">egit armentum positoque plectro</l>
+                  <l n="298">impari tauros calamo vocavit,</l>
+                  <l n="299">induit formas quotiens minores</l>
+                  <l n="300">ipse qui caelum nebulasque <app>
+                        <lem wit="#A">ducit</lem>
+                        <rdg wit="#E">fecit</rdg>
+                     </app>: </l>
+                  <l n="301">Candidas ales modo movit alas,</l>
+                  <l n="302">dulcior <app>
+                        <lem wit="#recc">vocem</lem>
+                        <rdg wit="#E #A">voce</rdg>
+                     </app> moriente cygno ;</l>
+                  <l n="303">fronte nunc torva petulans iuvencus</l>
+                  <l n="304">virginum stravit sua terga ludo,</l>
+                  <l n="305">perque fraternos <app>
+                        <lem wit="#E">nova</lem>
+                        <rdg wit="#A">mala</rdg>
+                     </app> regna fluctus </l>
+                  <l n="306">ungula lentos imitante remos</l>
+                  <l n="307">* pectore adverso domuit profundum,</l>
+                  <l n="308">pro sua vector timidus rapina,</l>
+                  <l n="309">arsit obscuri dea clara mundi</l>
+                  <l n="310">nocte deserta nitidosque fratri </l>
+                  <l n="311">tradidit currus aliter regendos:</l>
+                  <l n="312">ille nocturnas agitare bigas</l>
+                  <l n="313">discit et gyro breviore flecti, </l>
+                  <app>
+                     <lem wit="#LEO #perseus"><l n="316">dum tremunt axes graviore curru; </l></lem>
+                     <rdg> </rdg>
+                  </app>
+                  <l n="314">nec suum tempus tenuere nectes </l>
+                  <l n="315">et dies tardo remeavit ortu. </l>
+                  <app>
+                     <lem wit="#LEO"> </lem>
+                     <rdg><l n="316">dum tremunt axes graviore curru; </l></rdg>
+                  </app>
+                  <l n="317">natus <persName ref="#Alcmène">Alcmena</persName> posuit pharetras </l>
+                  <l n="318">et minax vasti spolium leonis,</l>
+                  <l n="319">passus aptari digitis zmaragdos</l>
+                  <l n="320">et dari legem rudibus capillis; </l>
+                  <l n="321">crura distincto religavit auro.</l>
+                  <l n="322">luteo plantas cohibente socco;</l>
+                  <l n="323">et manu, clavam modo qua gerebat,</l>
+                  <l n="324">fila deduxit properante fuso:</l>
+                  <l n="325"><app>
+                        <lem wit="#A">Vidit</lem>
+                        <rdg wit="#E">Vidi</rdg>
+                     </app>
+                     <placeName ref="#Perse">Persis</placeName> ditique ferox </l>
+                  <l n="326"><placeName ref="#Lydie">Lydia</placeName>
+                     <app>
+                        <lem wit="#E #P">regno</lem>
+                        <rdg wit="#C #recc">regni</rdg>
+                        <rdg wit="#GROTIUS">harenae</rdg>
+                        <rdg wit="#Z">harena</rdg>
+                     </app></l>
+                  <l n="327">deiecta feri terga leonis</l>
+                  <l n="328">umerisque, quibus sederat alti</l>
+                  <l n="329">regia caeli,</l>
+                  <l n="330">tenuem <placeName ref="#Tyr">Tyrio</placeName> stamine pallam. </l>
+               </sp></rdg>
+         </app>
+      </body>
+   </text>
+</TEI>
